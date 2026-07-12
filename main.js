@@ -1,10 +1,35 @@
 /* ============================================================
-   main.js — Portfolio Adjie Wahyudi | Premium Interactions
+   main.js — Portfolio Adjie Wahyudi | Modern Light/Dark Theme
 ============================================================ */
 
+/* ── 0. DARK MODE TOGGLE ── */
+const themeToggleBtn = document.getElementById('theme-toggle-btn');
+const htmlEl = document.documentElement;
+
+// Load saved preference or default to light
+const savedTheme = localStorage.getItem('portfolio-theme') || 'light';
+if (savedTheme === 'dark') {
+  htmlEl.setAttribute('data-theme', 'dark');
+}
+
+function toggleTheme() {
+  const isDark = htmlEl.getAttribute('data-theme') === 'dark';
+  if (isDark) {
+    htmlEl.removeAttribute('data-theme');
+    localStorage.setItem('portfolio-theme', 'light');
+  } else {
+    htmlEl.setAttribute('data-theme', 'dark');
+    localStorage.setItem('portfolio-theme', 'dark');
+  }
+}
+
+if (themeToggleBtn) {
+  themeToggleBtn.addEventListener('click', toggleTheme);
+}
+
 /* ── 1. NAVBAR: scroll effect + active link ── */
-const navbar  = document.getElementById('navbar');
-const navLinks = document.querySelectorAll('.nav-links a');
+const navbar   = document.getElementById('navbar');
+const navLinks = document.querySelectorAll('.nav-link-pill');
 const sections = document.querySelectorAll('section[id]');
 
 window.addEventListener('scroll', () => {
@@ -159,13 +184,11 @@ const cfBtn   = document.getElementById('cf-submit');
 if (cfForm) {
   cfForm.addEventListener('submit', (e) => {
     e.preventDefault();
-    // Simple validation
     const name  = document.getElementById('cf-name').value.trim();
     const email = document.getElementById('cf-email').value.trim();
     const msg   = document.getElementById('cf-msg').value.trim();
     if (!name || !email || !msg) return;
 
-    // Simulate sending
     cfBtn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> Mengirim...';
     cfBtn.disabled = true;
     setTimeout(() => {
@@ -192,13 +215,11 @@ document.querySelectorAll('a[href^="#"]').forEach(a => {
   });
 });
 
-/* ── 10. MICRO-ANIMATIONS: stagger cards on first load ── */
+/* ── 10. MICRO-ANIMATIONS ── */
 window.addEventListener('load', () => {
-  // Hero badge entrance is handled by CSS animation
-  // Trigger active nav on load
   updateActiveNav();
 
-  // Add parallax subtlety to bg orbs
+  // Parallax orbs on mouse move
   window.addEventListener('mousemove', (e) => {
     const cx = (e.clientX / window.innerWidth  - 0.5) * 2;
     const cy = (e.clientY / window.innerHeight - 0.5) * 2;

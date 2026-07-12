@@ -1,820 +1,1231 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="id">
-<head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Adjie Wahyudi | Portfolio — Sistem Informasi</title>
-  <meta name="description" content="Portfolio Adjie Wahyudi, Mahasiswa Sistem Informasi Universitas BSI Semester 6 dengan IPK 3.56. Keahlian Programming, Data Analysis, dan Office Support."/>
-  <!-- Fonts -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adjie Wahyudi | Portfolio — Sistem Informasi</title>
+    <meta
+      name="description"
+      content="Portfolio Adjie Wahyudi, Mahasiswa Sistem Informasi Universitas BSI Semester 6 dengan IPK 3.56. Keahlian Programming, Data Analysis, dan Office Support."
+    />
+    <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
-  <!-- Font Awesome 6 (ikon asli) -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
-  <!-- Devicons (ikon teknologi asli) -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"/>
-  <link rel="stylesheet" href="style.css"/>
-</head>
-<body>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&family=Nunito:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+    <!-- Font Awesome 6 (ikon asli) -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <!-- Devicons (ikon teknologi asli) -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- ── BACKGROUNDS ── -->
+    <div class="bg-mesh" aria-hidden="true"></div>
+    <div class="grid-bg" aria-hidden="true"></div>
+    <div class="orbs" aria-hidden="true">
+      <div class="orb orb1"></div>
+      <div class="orb orb2"></div>
+      <div class="orb orb3"></div>
+      <div class="orb orb4"></div>
+    </div>
 
-<!-- ── BACKGROUNDS ── -->
-<div class="bg-mesh" aria-hidden="true"></div>
-<div class="grid-bg" aria-hidden="true"></div>
-<div class="orbs" aria-hidden="true">
-  <div class="orb orb1"></div>
-  <div class="orb orb2"></div>
-  <div class="orb orb3"></div>
-  <div class="orb orb4"></div>
-</div>
-
-<!-- ============================================================
+    <!-- ============================================================
      NAVBAR
 ============================================================ -->
-<nav id="navbar" role="navigation" aria-label="Navigasi utama">
-  <div class="nav-wrap">
-    <div class="nav-logo">AW.</div>
-    <ul class="nav-links">
-      <li><a href="#about" id="nav-about">Tentang</a></li>
-      <li><a href="#skills" id="nav-skills">Keahlian</a></li>
-      <li><a href="#education" id="nav-education">Pendidikan</a></li>
-      <li><a href="#projects" id="nav-projects">Projek</a></li>
-      <li><a href="#contact" id="nav-contact">Kontak</a></li>
-    </ul>
-    <div class="nav-right">
-      <a href="mailto:adjiewahyudi@email.com" class="nav-cta" id="nav-hire-btn">
-        <i class="fa-solid fa-paper-plane"></i> Hubungi Saya
-      </a>
-      <button class="hamburger" id="hamburger-btn" aria-label="Buka menu">
-        <span></span><span></span><span></span>
+    <nav id="navbar" role="navigation" aria-label="Navigasi utama">
+      <div class="nav-wrap">
+        <div class="nav-logo">AW.</div>
+        <ul class="nav-links">
+          <li>
+            <a href="#about" id="nav-about" class="nav-link-pill">
+              <i class="fa-solid fa-user"></i> Tentang
+            </a>
+          </li>
+          <li>
+            <a href="#skills" id="nav-skills" class="nav-link-pill">
+              <i class="fa-solid fa-code"></i> Keahlian
+            </a>
+          </li>
+          <li>
+            <a href="#education" id="nav-education" class="nav-link-pill">
+              <i class="fa-solid fa-graduation-cap"></i> Pendidikan
+            </a>
+          </li>
+          <li>
+            <a href="#projects" id="nav-projects" class="nav-link-pill">
+              <i class="fa-solid fa-diagram-project"></i> Projek
+            </a>
+          </li>
+          <li>
+            <a href="#contact" id="nav-contact" class="nav-link-pill">
+              <i class="fa-solid fa-envelope"></i> Kontak
+            </a>
+          </li>
+        </ul>
+        <div class="nav-right">
+          <button class="theme-toggle" id="theme-toggle-btn" aria-label="Toggle tema gelap/terang" title="Ganti Mode">
+            <i class="fa-solid fa-sun icon-sun"></i>
+            <i class="fa-solid fa-moon icon-moon"></i>
+          </button>
+          <a href="ADJIE WAHYUDI CV.pdf" class="nav-cv-btn" id="nav-cv-btn" download>
+            <i class="fa-solid fa-file-arrow-down"></i> Download CV
+          </a>
+          <a href="mailto:adjiewahyudi@email.com" class="nav-cta" id="nav-hire-btn">
+            <i class="fa-solid fa-paper-plane"></i> Hubungi Saya
+          </a>
+          <button class="hamburger" id="hamburger-btn" aria-label="Buka menu">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+
+    <!-- Mobile menu -->
+    <div class="mobile-menu" id="mobile-menu" role="dialog" aria-modal="true">
+      <button class="mobile-close" id="mobile-close" aria-label="Tutup menu">
+        &times;
       </button>
+      <a href="#about" id="m-about" class="mob-link">
+        <span class="mob-icon"><i class="fa-solid fa-user"></i></span>
+        Tentang
+      </a>
+      <a href="#skills" id="m-skills" class="mob-link">
+        <span class="mob-icon"><i class="fa-solid fa-code"></i></span>
+        Keahlian
+      </a>
+      <a href="#education" id="m-edu" class="mob-link">
+        <span class="mob-icon"><i class="fa-solid fa-graduation-cap"></i></span>
+        Pendidikan
+      </a>
+      <a href="#projects" id="m-proj" class="mob-link">
+        <span class="mob-icon"><i class="fa-solid fa-diagram-project"></i></span>
+        Projek
+      </a>
+      <a href="#contact" id="m-contact" class="mob-link">
+        <span class="mob-icon"><i class="fa-solid fa-envelope"></i></span>
+        Kontak
+      </a>
+      <a href="ADJIE WAHYUDI CV.pdf" id="m-cv" class="mobile-cv-link" download>
+        <i class="fa-solid fa-file-arrow-down"></i> Download CV
+      </a>
     </div>
-  </div>
-</nav>
 
-<!-- Mobile menu -->
-<div class="mobile-menu" id="mobile-menu" role="dialog" aria-modal="true">
-  <button class="mobile-close" id="mobile-close" aria-label="Tutup menu">&times;</button>
-  <a href="#about"     id="m-about">Tentang</a>
-  <a href="#skills"    id="m-skills">Keahlian</a>
-  <a href="#education" id="m-edu">Pendidikan</a>
-  <a href="#projects"  id="m-proj">Projek</a>
-  <a href="#contact"   id="m-contact">Kontak</a>
-</div>
-
-<!-- ============================================================
+    <!-- ============================================================
      HERO
 ============================================================ -->
-<section id="hero">
-  <div class="container">
-    <div class="hero-grid">
+    <section id="hero">
+      <div class="container">
+        <div class="hero-grid">
+          <!-- LEFT -->
+          <div>
+            <div class="hero-badge">
+              <span class="badge-dot"></span>
+              Tersedia untuk Magang &bull; 2025
+            </div>
 
-      <!-- LEFT -->
-      <div>
-        <div class="hero-badge">
-          <span class="badge-dot"></span>
-          Tersedia untuk Magang &bull; 2025
-        </div>
+            <h1 class="hero-title">
+              <span class="title-hi">Halo, Saya</span>
+              <span class="hero-name">Adjie Wahyudi</span>
+            </h1>
 
-        <h1 class="hero-title">
-          <span class="title-hi">Halo, Saya</span>
-          <span class="hero-name">Adjie Wahyudi</span>
-        </h1>
+            <p class="hero-sub">
+              Mahasiswa <strong>Sistem Informasi</strong> yang passionate di
+              bidang <strong>Programming</strong>,
+              <strong>Analisis Data</strong>, dan
+              <strong>Office Support</strong>. Siap memberikan kontribusi nyata.
+            </p>
 
-        <p class="hero-sub">
-          Mahasiswa <strong>Sistem Informasi</strong> yang passionate di bidang
-          <strong>Programming</strong>, <strong>Analisis Data</strong>, dan
-          <strong>Office Support</strong>. Siap memberikan kontribusi nyata.
-        </p>
+            <div class="hero-tags">
+              <span class="htag t-indigo"
+                ><i class="fa-solid fa-code"></i> Programmer</span
+              >
+              <span class="htag t-cyan"
+                ><i class="fa-solid fa-chart-line"></i> Data Analyst</span
+              >
+              <span class="htag t-amber"
+                ><i class="fa-solid fa-briefcase"></i> Office Support</span
+              >
+              <span class="htag t-green"
+                ><i class="fa-solid fa-graduation-cap"></i> Semester 6</span
+              >
+            </div>
 
-        <div class="hero-tags">
-          <span class="htag t-indigo"><i class="fa-solid fa-code"></i> Programmer</span>
-          <span class="htag t-cyan"><i class="fa-solid fa-chart-line"></i> Data Analyst</span>
-          <span class="htag t-amber"><i class="fa-solid fa-briefcase"></i> Office Support</span>
-          <span class="htag t-green"><i class="fa-solid fa-graduation-cap"></i> Semester 6</span>
-        </div>
+            <div class="hero-ctas">
+              <a href="#contact" class="btn-primary" id="hero-contact-btn">
+                <i class="fa-solid fa-envelope"></i> Hubungi Saya
+              </a>
+              <a href="#projects" class="btn-outline" id="hero-projects-btn">
+                <i class="fa-solid fa-folder-open"></i> Lihat Projek
+              </a>
+              <a
+                href="ADJIE WAHYUDI CV.pdf"
+                class="btn-cv"
+                id="hero-cv-btn"
+                download
+              >
+                <i class="fa-solid fa-file-arrow-down"></i> Download CV
+              </a>
+            </div>
+          </div>
 
-        <div class="hero-ctas">
-          <a href="#contact" class="btn-primary" id="hero-contact-btn">
-            <i class="fa-solid fa-envelope"></i> Hubungi Saya
-          </a>
-          <a href="#projects" class="btn-outline" id="hero-projects-btn">
-            <i class="fa-solid fa-folder-open"></i> Lihat Projek
-          </a>
+          <!-- RIGHT -->
+          <div class="hero-visual">
+            <div class="profile-card" id="profile-card">
+              <div class="avatar-ring">
+                <img
+                  src="profile_avatar.jpeg"
+                  alt="Foto profil Adjie Wahyudi"
+                />
+              </div>
+              <div class="pname">Adjie Wahyudi</div>
+              <div class="prole-wrap">
+                <span class="prole" id="prole-text"></span
+                ><span class="pcursor"></span>
+              </div>
+              <div class="pdivider"></div>
+              <div class="pstats">
+                <div class="pstat">
+                  <div class="pstat-n">6</div>
+                  <div class="pstat-l">Semester</div>
+                </div>
+                <div class="pstat">
+                  <div class="pstat-n">3.56</div>
+                  <div class="pstat-l">IPK</div>
+                </div>
+                <div class="pstat">
+                  <div class="pstat-n">9+</div>
+                  <div class="pstat-l">Skill</div>
+                </div>
+                <div class="pstat">
+                  <div class="pstat-n">SI</div>
+                  <div class="pstat-l">Prodi</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="skill-badges">
+              <div class="sbadge">
+                <div
+                  class="sb-icon"
+                  style="background: rgba(55, 118, 171, 0.14)"
+                >
+                  <i class="devicon-python-plain colored"></i>
+                </div>
+                <div>
+                  <div class="sb-name">Python</div>
+                  <div class="sb-type">Programming</div>
+                </div>
+              </div>
+              <div class="sbadge">
+                <div
+                  class="sb-icon"
+                  style="background: rgba(0, 117, 143, 0.14)"
+                >
+                  <i class="devicon-mysql-plain colored"></i>
+                </div>
+                <div>
+                  <div class="sb-name">MySQL</div>
+                  <div class="sb-type">Database</div>
+                </div>
+              </div>
+              <div class="sbadge">
+                <div
+                  class="sb-icon"
+                  style="background: rgba(228, 77, 38, 0.14)"
+                >
+                  <i class="devicon-html5-plain colored"></i>
+                </div>
+                <div>
+                  <div class="sb-name">HTML &amp; CSS</div>
+                  <div class="sb-type">Web Dev</div>
+                </div>
+              </div>
+              <div class="sbadge">
+                <div
+                  class="sb-icon"
+                  style="background: rgba(242, 78, 30, 0.14)"
+                >
+                  <i class="devicon-figma-plain colored"></i>
+                </div>
+                <div>
+                  <div class="sb-name">Figma</div>
+                  <div class="sb-type">UI Design</div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
+    </section>
 
-      <!-- RIGHT -->
-      <div class="hero-visual">
-        <div class="profile-card" id="profile-card">
-          <div class="avatar-ring">
-            <img src="profile_avatar.jpg" alt="Foto profil Adjie Wahyudi"/>
-          </div>
-          <div class="pname">Adjie Wahyudi</div>
-          <div class="prole-wrap">
-            <span class="prole" id="prole-text"></span><span class="pcursor"></span>
-          </div>
-          <div class="pdivider"></div>
-          <div class="pstats">
-            <div class="pstat">
-              <div class="pstat-n">6</div>
-              <div class="pstat-l">Semester</div>
-            </div>
-            <div class="pstat">
-              <div class="pstat-n">3.56</div>
-              <div class="pstat-l">IPK</div>
-            </div>
-            <div class="pstat">
-              <div class="pstat-n">9+</div>
-              <div class="pstat-l">Skill</div>
-            </div>
-            <div class="pstat">
-              <div class="pstat-n">SI</div>
-              <div class="pstat-l">Prodi</div>
-            </div>
-          </div>
-        </div>
+    <div class="divider"></div>
 
-        <div class="skill-badges">
-          <div class="sbadge">
-            <div class="sb-icon" style="background:rgba(55,118,171,.14)">
-              <i class="devicon-python-plain colored"></i>
-            </div>
-            <div>
-              <div class="sb-name">Python</div>
-              <div class="sb-type">Programming</div>
-            </div>
-          </div>
-          <div class="sbadge">
-            <div class="sb-icon" style="background:rgba(0,117,143,.14)">
-              <i class="devicon-mysql-plain colored"></i>
-            </div>
-            <div>
-              <div class="sb-name">MySQL</div>
-              <div class="sb-type">Database</div>
-            </div>
-          </div>
-          <div class="sbadge">
-            <div class="sb-icon" style="background:rgba(228,77,38,.14)">
-              <i class="devicon-html5-plain colored"></i>
-            </div>
-            <div>
-              <div class="sb-name">HTML &amp; CSS</div>
-              <div class="sb-type">Web Dev</div>
-            </div>
-          </div>
-          <div class="sbadge">
-            <div class="sb-icon" style="background:rgba(242,78,30,.14)">
-              <i class="devicon-figma-plain colored"></i>
-            </div>
-            <div>
-              <div class="sb-name">Figma</div>
-              <div class="sb-type">UI Design</div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<div class="divider"></div>
-
-<!-- ============================================================
+    <!-- ============================================================
      ABOUT
 ============================================================ -->
-<section id="about">
-  <div class="container">
-    <div class="about-grid">
+    <section id="about">
+      <div class="container">
+        <div class="about-grid">
+          <div class="reveal-l">
+            <div class="s-label">Tentang Saya</div>
+            <h2 class="s-title">
+              Siapa Adjie <span class="g-text">Wahyudi?</span>
+            </h2>
+            <div class="about-text">
+              <p>
+                Saya adalah mahasiswa aktif Program Studi
+                <strong>Sistem Informasi</strong> di Universitas Bina Sarana
+                Informatika (BSI), saat ini menempuh
+                <strong>Semester 6</strong> dengan IPK <strong>3.56</strong>.
+                Saya memiliki ketertarikan besar terhadap dunia teknologi,
+                khususnya di bidang pemrograman dan analisis data.
+              </p>
+              <p>
+                Sebagai mahasiswa Sistem Informasi, saya dibekali pemahaman
+                menyeluruh tentang bagaimana teknologi bisa diintegrasikan untuk
+                mendukung proses bisnis. Tidak hanya sisi teknis, saya juga
+                memahami kebutuhan operasional dan administratif organisasi.
+              </p>
+              <p>
+                Saya percaya magang adalah kesempatan emas untuk menerapkan ilmu
+                ke dunia nyata. Saya adalah seseorang yang
+                <strong>cepat belajar</strong>, <strong>proaktif</strong>, dan
+                selalu <strong>berorientasi pada hasil</strong>.
+              </p>
+            </div>
+          </div>
 
-      <div class="reveal-l">
-        <div class="s-label">Tentang Saya</div>
-        <h2 class="s-title">Siapa Adjie <span class="g-text">Wahyudi?</span></h2>
-        <div class="about-text">
-          <p>Saya adalah mahasiswa aktif Program Studi <strong>Sistem Informasi</strong> di Universitas Bina Sarana Informatika (BSI), saat ini menempuh <strong>Semester 6</strong> dengan IPK <strong>3.56</strong>. Saya memiliki ketertarikan besar terhadap dunia teknologi, khususnya di bidang pemrograman dan analisis data.</p>
-          <p>Sebagai mahasiswa Sistem Informasi, saya dibekali pemahaman menyeluruh tentang bagaimana teknologi bisa diintegrasikan untuk mendukung proses bisnis. Tidak hanya sisi teknis, saya juga memahami kebutuhan operasional dan administratif organisasi.</p>
-          <p>Saya percaya magang adalah kesempatan emas untuk menerapkan ilmu ke dunia nyata. Saya adalah seseorang yang <strong>cepat belajar</strong>, <strong>proaktif</strong>, dan selalu <strong>berorientasi pada hasil</strong>.</p>
+          <div class="about-feats reveal-r">
+            <div class="af d1">
+              <div class="af-icon" style="background: rgba(99, 102, 241, 0.14)">
+                <i class="fa-solid fa-lightbulb" style="color: #a5b4fc"></i>
+              </div>
+              <div>
+                <div class="af-name">Problem Solver</div>
+                <div class="af-desc">
+                  Terbiasa menganalisis masalah secara sistematis dan menemukan
+                  solusi efektif menggunakan pendekatan data-driven.
+                </div>
+              </div>
+            </div>
+            <div class="af d2">
+              <div class="af-icon" style="background: rgba(34, 211, 238, 0.12)">
+                <i class="fa-solid fa-arrows-rotate" style="color: #67e8f9"></i>
+              </div>
+              <div>
+                <div class="af-name">Adaptif &amp; Cepat Belajar</div>
+                <div class="af-desc">
+                  Dapat menyesuaikan diri dengan cepat terhadap lingkungan baru,
+                  tools baru, dan kebutuhan tim yang dinamis.
+                </div>
+              </div>
+            </div>
+            <div class="af d3">
+              <div class="af-icon" style="background: rgba(245, 158, 11, 0.12)">
+                <i class="fa-solid fa-handshake" style="color: #fcd34d"></i>
+              </div>
+              <div>
+                <div class="af-name">Team Player</div>
+                <div class="af-desc">
+                  Berpengalaman bekerja dalam tim di berbagai tugas kuliah dan
+                  projek dengan komunikasi yang baik.
+                </div>
+              </div>
+            </div>
+            <div class="af d4">
+              <div class="af-icon" style="background: rgba(34, 197, 94, 0.12)">
+                <i
+                  class="fa-solid fa-magnifying-glass"
+                  style="color: #86efac"
+                ></i>
+              </div>
+              <div>
+                <div class="af-name">Detail-Oriented</div>
+                <div class="af-desc">
+                  Memperhatikan detail dalam setiap pekerjaan, dari penulisan
+                  laporan hingga pengelolaan data dan dokumen.
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
+    </section>
 
-      <div class="about-feats reveal-r">
-        <div class="af d1">
-          <div class="af-icon" style="background:rgba(99,102,241,.14)">
-            <i class="fa-solid fa-lightbulb" style="color:#a5b4fc"></i>
-          </div>
-          <div>
-            <div class="af-name">Problem Solver</div>
-            <div class="af-desc">Terbiasa menganalisis masalah secara sistematis dan menemukan solusi efektif menggunakan pendekatan data-driven.</div>
-          </div>
-        </div>
-        <div class="af d2">
-          <div class="af-icon" style="background:rgba(34,211,238,.12)">
-            <i class="fa-solid fa-arrows-rotate" style="color:#67e8f9"></i>
-          </div>
-          <div>
-            <div class="af-name">Adaptif &amp; Cepat Belajar</div>
-            <div class="af-desc">Dapat menyesuaikan diri dengan cepat terhadap lingkungan baru, tools baru, dan kebutuhan tim yang dinamis.</div>
-          </div>
-        </div>
-        <div class="af d3">
-          <div class="af-icon" style="background:rgba(245,158,11,.12)">
-            <i class="fa-solid fa-handshake" style="color:#fcd34d"></i>
-          </div>
-          <div>
-            <div class="af-name">Team Player</div>
-            <div class="af-desc">Berpengalaman bekerja dalam tim di berbagai tugas kuliah dan projek dengan komunikasi yang baik.</div>
-          </div>
-        </div>
-        <div class="af d4">
-          <div class="af-icon" style="background:rgba(34,197,94,.12)">
-            <i class="fa-solid fa-magnifying-glass" style="color:#86efac"></i>
-          </div>
-          <div>
-            <div class="af-name">Detail-Oriented</div>
-            <div class="af-desc">Memperhatikan detail dalam setiap pekerjaan, dari penulisan laporan hingga pengelolaan data dan dokumen.</div>
-          </div>
-        </div>
-      </div>
+    <div class="divider"></div>
 
-    </div>
-  </div>
-</section>
-
-<div class="divider"></div>
-
-<!-- ============================================================
+    <!-- ============================================================
      SKILLS
 ============================================================ -->
-<section id="skills">
-  <div class="container">
-    <div class="reveal">
-      <div class="s-label">Keahlian</div>
-      <h2 class="s-title">Technical <span class="g-text">&amp; Office Skills</span></h2>
-      <p class="s-desc">Kombinasi keahlian teknis dan administratif yang siap mendukung berbagai kebutuhan tim dan organisasi.</p>
-    </div>
-
-    <div class="skills-tabs">
-      <button class="stab active" data-tab="tab-semua" id="stab-semua">Semua</button>
-      <button class="stab" data-tab="tab-coding" id="stab-coding">
-        <i class="fa-solid fa-code"></i> Programming
-      </button>
-      <button class="stab" data-tab="tab-data" id="stab-data">
-        <i class="fa-solid fa-chart-column"></i> Data &amp; DB
-      </button>
-      <button class="stab" data-tab="tab-office" id="stab-office">
-        <i class="fa-solid fa-file-lines"></i> Office &amp; Design
-      </button>
-    </div>
-
-    <!-- Panel: Semua -->
-    <div class="skills-panel active" id="tab-semua">
-
-      <div class="sk-card reveal d1">
-        <div class="sk-ico" style="background:rgba(55,118,171,.12)">
-          <i class="devicon-python-plain colored"></i>
+    <section id="skills">
+      <div class="container">
+        <div class="reveal">
+          <div class="s-label">Keahlian</div>
+          <h2 class="s-title">
+            Technical <span class="g-text">&amp; Office Skills</span>
+          </h2>
+          <p class="s-desc">
+            Kombinasi keahlian teknis dan administratif yang siap mendukung
+            berbagai kebutuhan tim dan organisasi.
+          </p>
         </div>
-        <div class="sk-name">Python</div>
-        <div class="sk-desc">Scripting, otomasi tugas, analisis data dengan Pandas &amp; NumPy, serta visualisasi dengan Matplotlib.</div>
-        <div class="sk-bar-bg"><div class="sk-bar" data-w="75%"></div></div>
-        <div class="sk-pct">75%</div>
-      </div>
 
-      <div class="sk-card reveal d2">
-        <div class="sk-ico" style="background:rgba(0,117,143,.12)">
-          <i class="devicon-mysql-plain colored"></i>
+        <div class="skills-tabs">
+          <button class="stab active" data-tab="tab-semua" id="stab-semua">
+            Semua
+          </button>
+          <button class="stab" data-tab="tab-coding" id="stab-coding">
+            <i class="fa-solid fa-code"></i> Programming
+          </button>
+          <button class="stab" data-tab="tab-data" id="stab-data">
+            <i class="fa-solid fa-chart-column"></i> Data &amp; DB
+          </button>
+          <button class="stab" data-tab="tab-office" id="stab-office">
+            <i class="fa-solid fa-file-lines"></i> Office &amp; Design
+          </button>
         </div>
-        <div class="sk-name">SQL &amp; Database</div>
-        <div class="sk-desc">Query data, desain struktur database, pengelolaan data menggunakan MySQL dan PostgreSQL.</div>
-        <div class="sk-bar-bg"><div class="sk-bar" data-w="78%"></div></div>
-        <div class="sk-pct">78%</div>
-      </div>
 
-      <div class="sk-card reveal d3">
-        <div class="sk-ico" style="background:rgba(33,115,70,.12)">
-          <i class="fa-solid fa-table-cells-large" style="color:#217346;font-size:1.8rem"></i>
+        <!-- Panel: Semua -->
+        <div class="skills-panel active" id="tab-semua">
+          <div class="sk-card reveal d1">
+            <div class="sk-ico" style="background: rgba(55, 118, 171, 0.12)">
+              <i class="devicon-python-plain colored"></i>
+            </div>
+            <div class="sk-name">Python</div>
+            <div class="sk-desc">
+              Scripting, otomasi tugas, analisis data dengan Pandas &amp; NumPy,
+              serta visualisasi dengan Matplotlib.
+            </div>
+            <div class="sk-bar-bg"><div class="sk-bar" data-w="75%"></div></div>
+            <div class="sk-pct">75%</div>
+          </div>
+
+          <div class="sk-card reveal d2">
+            <div class="sk-ico" style="background: rgba(0, 117, 143, 0.12)">
+              <i class="devicon-mysql-plain colored"></i>
+            </div>
+            <div class="sk-name">SQL &amp; Database</div>
+            <div class="sk-desc">
+              Query data, desain struktur database, pengelolaan data menggunakan
+              MySQL dan PostgreSQL.
+            </div>
+            <div class="sk-bar-bg"><div class="sk-bar" data-w="78%"></div></div>
+            <div class="sk-pct">78%</div>
+          </div>
+
+          <div class="sk-card reveal d3">
+            <div class="sk-ico" style="background: rgba(33, 115, 70, 0.12)">
+              <i
+                class="fa-solid fa-table-cells-large"
+                style="color: #217346; font-size: 1.8rem"
+              ></i>
+            </div>
+            <div class="sk-name">Microsoft Excel</div>
+            <div class="sk-desc">
+              Formula lanjutan, Pivot Table, VLOOKUP, visualisasi data, serta
+              pelaporan analitik bisnis.
+            </div>
+            <div class="sk-bar-bg"><div class="sk-bar" data-w="85%"></div></div>
+            <div class="sk-pct">85%</div>
+          </div>
+
+          <div class="sk-card reveal d4">
+            <div class="sk-ico" style="background: rgba(228, 77, 38, 0.12)">
+              <i class="devicon-html5-plain colored"></i>
+            </div>
+            <div class="sk-name">HTML &amp; CSS</div>
+            <div class="sk-desc">
+              Membuat halaman web responsif dan semantik dengan desain yang
+              menarik menggunakan CSS modern.
+            </div>
+            <div class="sk-bar-bg"><div class="sk-bar" data-w="80%"></div></div>
+            <div class="sk-pct">80%</div>
+          </div>
+
+          <div class="sk-card reveal d5">
+            <div class="sk-ico" style="background: rgba(237, 117, 37, 0.12)">
+              <i class="devicon-java-plain colored"></i>
+            </div>
+            <div class="sk-name">Java</div>
+            <div class="sk-desc">
+              Pemrograman berorientasi objek (OOP), pengembangan aplikasi
+              desktop, dan logika algoritma.
+            </div>
+            <div class="sk-bar-bg"><div class="sk-bar" data-w="70%"></div></div>
+            <div class="sk-pct">70%</div>
+          </div>
+
+          <div class="sk-card reveal d6">
+            <div class="sk-ico" style="background: rgba(43, 87, 154, 0.12)">
+              <i
+                class="fa-solid fa-file-word"
+                style="color: #2b579a; font-size: 1.8rem"
+              ></i>
+            </div>
+            <div class="sk-name">Microsoft Office</div>
+            <div class="sk-desc">
+              Word, PowerPoint, Excel &mdash; pembuatan dokumen profesional,
+              laporan, dan presentasi bisnis.
+            </div>
+            <div class="sk-bar-bg"><div class="sk-bar" data-w="90%"></div></div>
+            <div class="sk-pct">90%</div>
+          </div>
+
+          <div class="sk-card reveal d1">
+            <div class="sk-ico" style="background: rgba(66, 133, 244, 0.12)">
+              <i class="devicon-google-plain colored"></i>
+            </div>
+            <div class="sk-name">Google Workspace</div>
+            <div class="sk-desc">
+              Sheets, Docs, Slides, Drive &mdash; kolaborasi dokumen real-time
+              dan pengelolaan file cloud.
+            </div>
+            <div class="sk-bar-bg"><div class="sk-bar" data-w="88%"></div></div>
+            <div class="sk-pct">88%</div>
+          </div>
+
+          <div class="sk-card reveal d2">
+            <div class="sk-ico" style="background: rgba(242, 78, 30, 0.12)">
+              <i class="devicon-figma-plain colored"></i>
+            </div>
+            <div class="sk-name">Figma / UI Design</div>
+            <div class="sk-desc">
+              Desain antarmuka, wireframing, prototyping, dan pembuatan mockup
+              web maupun mobile.
+            </div>
+            <div class="sk-bar-bg"><div class="sk-bar" data-w="72%"></div></div>
+            <div class="sk-pct">72%</div>
+          </div>
+
+          <div class="sk-card reveal d3">
+            <div class="sk-ico" style="background: rgba(34, 211, 238, 0.12)">
+              <i
+                class="fa-solid fa-chart-column"
+                style="color: #22d3ee; font-size: 1.8rem"
+              ></i>
+            </div>
+            <div class="sk-name">Analisis Data</div>
+            <div class="sk-desc">
+              Mengolah, membersihkan, dan menginterpretasikan data untuk
+              menghasilkan insight bisnis yang berguna.
+            </div>
+            <div class="sk-bar-bg"><div class="sk-bar" data-w="76%"></div></div>
+            <div class="sk-pct">76%</div>
+          </div>
         </div>
-        <div class="sk-name">Microsoft Excel</div>
-        <div class="sk-desc">Formula lanjutan, Pivot Table, VLOOKUP, visualisasi data, serta pelaporan analitik bisnis.</div>
-        <div class="sk-bar-bg"><div class="sk-bar" data-w="85%"></div></div>
-        <div class="sk-pct">85%</div>
-      </div>
 
-      <div class="sk-card reveal d4">
-        <div class="sk-ico" style="background:rgba(228,77,38,.12)">
-          <i class="devicon-html5-plain colored"></i>
+        <!-- Panel: Programming -->
+        <div class="skills-panel" id="tab-coding">
+          <div class="sk-card reveal d1">
+            <div class="sk-ico" style="background: rgba(55, 118, 171, 0.12)">
+              <i class="devicon-python-plain colored"></i>
+            </div>
+            <div class="sk-name">Python</div>
+            <div class="sk-desc">
+              Scripting, otomasi tugas, analisis data dengan Pandas &amp; NumPy,
+              visualisasi dengan Matplotlib.
+            </div>
+            <div class="sk-bar-bg"><div class="sk-bar" data-w="75%"></div></div>
+            <div class="sk-pct">75%</div>
+          </div>
+          <div class="sk-card reveal d2">
+            <div class="sk-ico" style="background: rgba(228, 77, 38, 0.12)">
+              <i class="devicon-html5-plain colored"></i>
+            </div>
+            <div class="sk-name">HTML &amp; CSS</div>
+            <div class="sk-desc">
+              Halaman web responsif dan semantik dengan CSS modern dan animasi
+              interaktif.
+            </div>
+            <div class="sk-bar-bg"><div class="sk-bar" data-w="80%"></div></div>
+            <div class="sk-pct">80%</div>
+          </div>
+          <div class="sk-card reveal d3">
+            <div class="sk-ico" style="background: rgba(237, 117, 37, 0.12)">
+              <i class="devicon-java-plain colored"></i>
+            </div>
+            <div class="sk-name">Java</div>
+            <div class="sk-desc">
+              Pemrograman OOP, pengembangan aplikasi desktop, dan logika
+              algoritma kompleks.
+            </div>
+            <div class="sk-bar-bg"><div class="sk-bar" data-w="70%"></div></div>
+            <div class="sk-pct">70%</div>
+          </div>
         </div>
-        <div class="sk-name">HTML &amp; CSS</div>
-        <div class="sk-desc">Membuat halaman web responsif dan semantik dengan desain yang menarik menggunakan CSS modern.</div>
-        <div class="sk-bar-bg"><div class="sk-bar" data-w="80%"></div></div>
-        <div class="sk-pct">80%</div>
-      </div>
 
-      <div class="sk-card reveal d5">
-        <div class="sk-ico" style="background:rgba(237,117,37,.12)">
-          <i class="devicon-java-plain colored"></i>
+        <!-- Panel: Data & DB -->
+        <div class="skills-panel" id="tab-data">
+          <div class="sk-card reveal d1">
+            <div class="sk-ico" style="background: rgba(0, 117, 143, 0.12)">
+              <i class="devicon-mysql-plain colored"></i>
+            </div>
+            <div class="sk-name">SQL &amp; Database</div>
+            <div class="sk-desc">
+              Query data, desain ERD, normalisasi, dan pengelolaan menggunakan
+              MySQL dan PostgreSQL.
+            </div>
+            <div class="sk-bar-bg"><div class="sk-bar" data-w="78%"></div></div>
+            <div class="sk-pct">78%</div>
+          </div>
+          <div class="sk-card reveal d2">
+            <div class="sk-ico" style="background: rgba(55, 118, 171, 0.12)">
+              <i class="devicon-python-plain colored"></i>
+            </div>
+            <div class="sk-name">Python (Data)</div>
+            <div class="sk-desc">
+              Pandas, NumPy, Matplotlib untuk pengolahan dan visualisasi data
+              secara otomatis.
+            </div>
+            <div class="sk-bar-bg"><div class="sk-bar" data-w="75%"></div></div>
+            <div class="sk-pct">75%</div>
+          </div>
+          <div class="sk-card reveal d3">
+            <div class="sk-ico" style="background: rgba(34, 211, 238, 0.12)">
+              <i
+                class="fa-solid fa-chart-column"
+                style="color: #22d3ee; font-size: 1.8rem"
+              ></i>
+            </div>
+            <div class="sk-name">Analisis Data</div>
+            <div class="sk-desc">
+              Mengolah, membersihkan, dan menginterpretasikan data untuk insight
+              bisnis yang akurat.
+            </div>
+            <div class="sk-bar-bg"><div class="sk-bar" data-w="76%"></div></div>
+            <div class="sk-pct">76%</div>
+          </div>
         </div>
-        <div class="sk-name">Java</div>
-        <div class="sk-desc">Pemrograman berorientasi objek (OOP), pengembangan aplikasi desktop, dan logika algoritma.</div>
-        <div class="sk-bar-bg"><div class="sk-bar" data-w="70%"></div></div>
-        <div class="sk-pct">70%</div>
-      </div>
 
-      <div class="sk-card reveal d6">
-        <div class="sk-ico" style="background:rgba(43,87,154,.12)">
-          <i class="fa-solid fa-file-word" style="color:#2b579a;font-size:1.8rem"></i>
+        <!-- Panel: Office & Design -->
+        <div class="skills-panel" id="tab-office">
+          <div class="sk-card reveal d1">
+            <div class="sk-ico" style="background: rgba(33, 115, 70, 0.12)">
+              <i
+                class="fa-solid fa-table-cells-large"
+                style="color: #217346; font-size: 1.8rem"
+              ></i>
+            </div>
+            <div class="sk-name">Microsoft Excel</div>
+            <div class="sk-desc">
+              Formula lanjutan, Pivot Table, VLOOKUP, visualisasi data, dan
+              pelaporan analitik.
+            </div>
+            <div class="sk-bar-bg"><div class="sk-bar" data-w="85%"></div></div>
+            <div class="sk-pct">85%</div>
+          </div>
+          <div class="sk-card reveal d2">
+            <div class="sk-ico" style="background: rgba(43, 87, 154, 0.12)">
+              <i
+                class="fa-solid fa-file-word"
+                style="color: #2b579a; font-size: 1.8rem"
+              ></i>
+            </div>
+            <div class="sk-name">Microsoft Office</div>
+            <div class="sk-desc">
+              Word, PowerPoint, Excel &mdash; dokumen profesional, laporan, dan
+              presentasi bisnis.
+            </div>
+            <div class="sk-bar-bg"><div class="sk-bar" data-w="90%"></div></div>
+            <div class="sk-pct">90%</div>
+          </div>
+          <div class="sk-card reveal d3">
+            <div class="sk-ico" style="background: rgba(66, 133, 244, 0.12)">
+              <i class="devicon-google-plain colored"></i>
+            </div>
+            <div class="sk-name">Google Workspace</div>
+            <div class="sk-desc">
+              Sheets, Docs, Slides, Drive &mdash; kolaborasi real-time dan
+              pengelolaan file cloud.
+            </div>
+            <div class="sk-bar-bg"><div class="sk-bar" data-w="88%"></div></div>
+            <div class="sk-pct">88%</div>
+          </div>
+          <div class="sk-card reveal d4">
+            <div class="sk-ico" style="background: rgba(242, 78, 30, 0.12)">
+              <i class="devicon-figma-plain colored"></i>
+            </div>
+            <div class="sk-name">Figma / UI Design</div>
+            <div class="sk-desc">
+              Wireframing, prototyping, dan desain antarmuka mobile dan web yang
+              user-friendly.
+            </div>
+            <div class="sk-bar-bg"><div class="sk-bar" data-w="72%"></div></div>
+            <div class="sk-pct">72%</div>
+          </div>
         </div>
-        <div class="sk-name">Microsoft Office</div>
-        <div class="sk-desc">Word, PowerPoint, Excel &mdash; pembuatan dokumen profesional, laporan, dan presentasi bisnis.</div>
-        <div class="sk-bar-bg"><div class="sk-bar" data-w="90%"></div></div>
-        <div class="sk-pct">90%</div>
       </div>
+    </section>
 
-      <div class="sk-card reveal d1">
-        <div class="sk-ico" style="background:rgba(66,133,244,.12)">
-          <i class="devicon-google-plain colored"></i>
-        </div>
-        <div class="sk-name">Google Workspace</div>
-        <div class="sk-desc">Sheets, Docs, Slides, Drive &mdash; kolaborasi dokumen real-time dan pengelolaan file cloud.</div>
-        <div class="sk-bar-bg"><div class="sk-bar" data-w="88%"></div></div>
-        <div class="sk-pct">88%</div>
-      </div>
+    <div class="divider"></div>
 
-      <div class="sk-card reveal d2">
-        <div class="sk-ico" style="background:rgba(242,78,30,.12)">
-          <i class="devicon-figma-plain colored"></i>
-        </div>
-        <div class="sk-name">Figma / UI Design</div>
-        <div class="sk-desc">Desain antarmuka, wireframing, prototyping, dan pembuatan mockup web maupun mobile.</div>
-        <div class="sk-bar-bg"><div class="sk-bar" data-w="72%"></div></div>
-        <div class="sk-pct">72%</div>
-      </div>
-
-      <div class="sk-card reveal d3">
-        <div class="sk-ico" style="background:rgba(34,211,238,.12)">
-          <i class="fa-solid fa-chart-column" style="color:#22d3ee;font-size:1.8rem"></i>
-        </div>
-        <div class="sk-name">Analisis Data</div>
-        <div class="sk-desc">Mengolah, membersihkan, dan menginterpretasikan data untuk menghasilkan insight bisnis yang berguna.</div>
-        <div class="sk-bar-bg"><div class="sk-bar" data-w="76%"></div></div>
-        <div class="sk-pct">76%</div>
-      </div>
-
-    </div>
-
-    <!-- Panel: Programming -->
-    <div class="skills-panel" id="tab-coding">
-      <div class="sk-card reveal d1">
-        <div class="sk-ico" style="background:rgba(55,118,171,.12)"><i class="devicon-python-plain colored"></i></div>
-        <div class="sk-name">Python</div>
-        <div class="sk-desc">Scripting, otomasi tugas, analisis data dengan Pandas &amp; NumPy, visualisasi dengan Matplotlib.</div>
-        <div class="sk-bar-bg"><div class="sk-bar" data-w="75%"></div></div>
-        <div class="sk-pct">75%</div>
-      </div>
-      <div class="sk-card reveal d2">
-        <div class="sk-ico" style="background:rgba(228,77,38,.12)"><i class="devicon-html5-plain colored"></i></div>
-        <div class="sk-name">HTML &amp; CSS</div>
-        <div class="sk-desc">Halaman web responsif dan semantik dengan CSS modern dan animasi interaktif.</div>
-        <div class="sk-bar-bg"><div class="sk-bar" data-w="80%"></div></div>
-        <div class="sk-pct">80%</div>
-      </div>
-      <div class="sk-card reveal d3">
-        <div class="sk-ico" style="background:rgba(237,117,37,.12)"><i class="devicon-java-plain colored"></i></div>
-        <div class="sk-name">Java</div>
-        <div class="sk-desc">Pemrograman OOP, pengembangan aplikasi desktop, dan logika algoritma kompleks.</div>
-        <div class="sk-bar-bg"><div class="sk-bar" data-w="70%"></div></div>
-        <div class="sk-pct">70%</div>
-      </div>
-    </div>
-
-    <!-- Panel: Data & DB -->
-    <div class="skills-panel" id="tab-data">
-      <div class="sk-card reveal d1">
-        <div class="sk-ico" style="background:rgba(0,117,143,.12)"><i class="devicon-mysql-plain colored"></i></div>
-        <div class="sk-name">SQL &amp; Database</div>
-        <div class="sk-desc">Query data, desain ERD, normalisasi, dan pengelolaan menggunakan MySQL dan PostgreSQL.</div>
-        <div class="sk-bar-bg"><div class="sk-bar" data-w="78%"></div></div>
-        <div class="sk-pct">78%</div>
-      </div>
-      <div class="sk-card reveal d2">
-        <div class="sk-ico" style="background:rgba(55,118,171,.12)"><i class="devicon-python-plain colored"></i></div>
-        <div class="sk-name">Python (Data)</div>
-        <div class="sk-desc">Pandas, NumPy, Matplotlib untuk pengolahan dan visualisasi data secara otomatis.</div>
-        <div class="sk-bar-bg"><div class="sk-bar" data-w="75%"></div></div>
-        <div class="sk-pct">75%</div>
-      </div>
-      <div class="sk-card reveal d3">
-        <div class="sk-ico" style="background:rgba(34,211,238,.12)">
-          <i class="fa-solid fa-chart-column" style="color:#22d3ee;font-size:1.8rem"></i>
-        </div>
-        <div class="sk-name">Analisis Data</div>
-        <div class="sk-desc">Mengolah, membersihkan, dan menginterpretasikan data untuk insight bisnis yang akurat.</div>
-        <div class="sk-bar-bg"><div class="sk-bar" data-w="76%"></div></div>
-        <div class="sk-pct">76%</div>
-      </div>
-    </div>
-
-    <!-- Panel: Office & Design -->
-    <div class="skills-panel" id="tab-office">
-      <div class="sk-card reveal d1">
-        <div class="sk-ico" style="background:rgba(33,115,70,.12)">
-          <i class="fa-solid fa-table-cells-large" style="color:#217346;font-size:1.8rem"></i>
-        </div>
-        <div class="sk-name">Microsoft Excel</div>
-        <div class="sk-desc">Formula lanjutan, Pivot Table, VLOOKUP, visualisasi data, dan pelaporan analitik.</div>
-        <div class="sk-bar-bg"><div class="sk-bar" data-w="85%"></div></div>
-        <div class="sk-pct">85%</div>
-      </div>
-      <div class="sk-card reveal d2">
-        <div class="sk-ico" style="background:rgba(43,87,154,.12)">
-          <i class="fa-solid fa-file-word" style="color:#2b579a;font-size:1.8rem"></i>
-        </div>
-        <div class="sk-name">Microsoft Office</div>
-        <div class="sk-desc">Word, PowerPoint, Excel &mdash; dokumen profesional, laporan, dan presentasi bisnis.</div>
-        <div class="sk-bar-bg"><div class="sk-bar" data-w="90%"></div></div>
-        <div class="sk-pct">90%</div>
-      </div>
-      <div class="sk-card reveal d3">
-        <div class="sk-ico" style="background:rgba(66,133,244,.12)"><i class="devicon-google-plain colored"></i></div>
-        <div class="sk-name">Google Workspace</div>
-        <div class="sk-desc">Sheets, Docs, Slides, Drive &mdash; kolaborasi real-time dan pengelolaan file cloud.</div>
-        <div class="sk-bar-bg"><div class="sk-bar" data-w="88%"></div></div>
-        <div class="sk-pct">88%</div>
-      </div>
-      <div class="sk-card reveal d4">
-        <div class="sk-ico" style="background:rgba(242,78,30,.12)"><i class="devicon-figma-plain colored"></i></div>
-        <div class="sk-name">Figma / UI Design</div>
-        <div class="sk-desc">Wireframing, prototyping, dan desain antarmuka mobile dan web yang user-friendly.</div>
-        <div class="sk-bar-bg"><div class="sk-bar" data-w="72%"></div></div>
-        <div class="sk-pct">72%</div>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-<div class="divider"></div>
-
-<!-- ============================================================
+    <!-- ============================================================
      EDUCATION
 ============================================================ -->
-<section id="education">
-  <div class="container">
-    <div class="reveal">
-      <div class="s-label">Pendidikan</div>
-      <h2 class="s-title">Latar Belakang <span class="g-text">Akademik</span></h2>
-      <p class="s-desc">Perjalanan pendidikan yang membentuk fondasi kuat di bidang teknologi informasi dan sistem informasi.</p>
-    </div>
+    <section id="education">
+      <div class="container">
+        <div class="reveal">
+          <div class="s-label">Pendidikan</div>
+          <h2 class="s-title">
+            Latar Belakang <span class="g-text">Akademik</span>
+          </h2>
+          <p class="s-desc">
+            Perjalanan pendidikan yang membentuk fondasi kuat di bidang
+            teknologi informasi dan sistem informasi.
+          </p>
+        </div>
 
-    <div class="edu-timeline">
+        <div class="edu-timeline">
+          <!-- BSI -->
+          <div class="edu-item reveal">
+            <div class="edu-dot"><i class="fa-solid fa-university"></i></div>
+            <div class="edu-box">
+              <div class="edu-status active">
+                <i class="fa-solid fa-circle" style="font-size: 0.45rem"></i>
+                Aktif &bull; 2022 &ndash; Sekarang
+              </div>
+              <div class="edu-school">Universitas Bina Sarana Informatika</div>
+              <div class="edu-major">S1 Sistem Informasi</div>
+              <div class="edu-meta">
+                <span
+                  ><i class="fa-solid fa-star" style="color: #f59e0b"></i> IPK:
+                  <strong>3.56</strong></span
+                >
+                <span
+                  ><i class="fa-solid fa-calendar" style="color: #6366f1"></i>
+                  2022 &mdash; Sekarang</span
+                >
+                <span
+                  ><i
+                    class="fa-solid fa-location-dot"
+                    style="color: #22d3ee"
+                  ></i>
+                  Jakarta</span
+                >
+              </div>
+              <div class="edu-desc">
+                Mendalami ilmu di bidang teknologi informasi dengan fokus pada
+                pengembangan sistem, manajemen database, analisis data, dan
+                pemrograman. Aktif di Semester 6 dengan performa akademik yang
+                memuaskan dan IPK 3.56.
+              </div>
+              <div class="courses">
+                <span class="course">Analisis &amp; Perancangan Sistem</span>
+                <span class="course">Basis Data &amp; SQL</span>
+                <span class="course">Pemrograman Web</span>
+                <span class="course">Algoritma &amp; Struktur Data</span>
+                <span class="course">Manajemen Proyek IT</span>
+                <span class="course">Kecerdasan Buatan</span>
+                <span class="course">Audit Sistem Informasi</span>
+                <span class="course">Business Intelligence</span>
+                <span class="course">Jaringan Komputer</span>
+                <span class="course">Rekayasa Perangkat Lunak</span>
+              </div>
+            </div>
+          </div>
 
-      <!-- BSI -->
-      <div class="edu-item reveal">
-        <div class="edu-dot"><i class="fa-solid fa-university"></i></div>
-        <div class="edu-box">
-          <div class="edu-status active">
-            <i class="fa-solid fa-circle" style="font-size:.45rem"></i> Aktif &bull; 2022 &ndash; Sekarang
-          </div>
-          <div class="edu-school">Universitas Bina Sarana Informatika</div>
-          <div class="edu-major">S1 Sistem Informasi</div>
-          <div class="edu-meta">
-            <span><i class="fa-solid fa-star" style="color:#f59e0b"></i> IPK: <strong>3.56</strong></span>
-            <span><i class="fa-solid fa-calendar" style="color:#6366f1"></i> 2022 &mdash; Sekarang</span>
-            <span><i class="fa-solid fa-location-dot" style="color:#22d3ee"></i> Jakarta</span>
-          </div>
-          <div class="edu-desc">
-            Mendalami ilmu di bidang teknologi informasi dengan fokus pada pengembangan sistem, manajemen database, analisis data, dan pemrograman. Aktif di Semester 6 dengan performa akademik yang memuaskan dan IPK 3.56.
-          </div>
-          <div class="courses">
-            <span class="course">Analisis &amp; Perancangan Sistem</span>
-            <span class="course">Basis Data &amp; SQL</span>
-            <span class="course">Pemrograman Web</span>
-            <span class="course">Algoritma &amp; Struktur Data</span>
-            <span class="course">Manajemen Proyek IT</span>
-            <span class="course">Kecerdasan Buatan</span>
-            <span class="course">Audit Sistem Informasi</span>
-            <span class="course">Business Intelligence</span>
-            <span class="course">Jaringan Komputer</span>
-            <span class="course">Rekayasa Perangkat Lunak</span>
+          <!-- SMA -->
+          <div class="edu-item reveal d2">
+            <div class="edu-dot"><i class="fa-solid fa-school"></i></div>
+            <div class="edu-box">
+              <div class="edu-status done">
+                <i
+                  class="fa-solid fa-check-circle"
+                  style="font-size: 0.75rem"
+                ></i>
+                Lulus
+              </div>
+              <div class="edu-school">SMA / Sederajat</div>
+              <div class="edu-major">— Isi nama sekolah Anda di sini —</div>
+              <div class="edu-meta">
+                <span
+                  ><i class="fa-solid fa-calendar" style="color: #6366f1"></i> —
+                  Isi tahun lulus —</span
+                >
+              </div>
+              <div class="edu-desc">
+                Isi deskripsi singkat tentang pendidikan SMA Anda di sini.
+              </div>
+            </div>
           </div>
         </div>
       </div>
+    </section>
 
-      <!-- SMA -->
-      <div class="edu-item reveal d2">
-        <div class="edu-dot"><i class="fa-solid fa-school"></i></div>
-        <div class="edu-box">
-          <div class="edu-status done">
-            <i class="fa-solid fa-check-circle" style="font-size:.75rem"></i> Lulus
-          </div>
-          <div class="edu-school">SMA / Sederajat</div>
-          <div class="edu-major">— Isi nama sekolah Anda di sini —</div>
-          <div class="edu-meta">
-            <span><i class="fa-solid fa-calendar" style="color:#6366f1"></i> — Isi tahun lulus —</span>
-          </div>
-          <div class="edu-desc">Isi deskripsi singkat tentang pendidikan SMA Anda di sini.</div>
-        </div>
-      </div>
+    <div class="divider"></div>
 
-    </div>
-  </div>
-</section>
-
-<div class="divider"></div>
-
-<!-- ============================================================
+    <!-- ============================================================
      PROJECTS
 ============================================================ -->
-<section id="projects">
-  <div class="container">
-    <div class="reveal">
-      <div class="s-label">Projek &amp; Pengalaman</div>
-      <h2 class="s-title">Apa yang Pernah Saya <span class="g-text">Kerjakan</span></h2>
-      <p class="s-desc">Projek yang dikerjakan selama perkuliahan sebagai bukti kemampuan dan pengalaman praktis. Tambahkan projek Anda di sini!</p>
-    </div>
+    <section id="projects">
+      <div class="container">
+        <div class="reveal">
+          <div class="s-label">Projek &amp; Pengalaman</div>
+          <h2 class="s-title">
+            Apa yang Pernah Saya <span class="g-text">Kerjakan</span>
+          </h2>
+          <p class="s-desc">
+            Projek yang dikerjakan selama perkuliahan sebagai bukti kemampuan
+            dan pengalaman praktis. Tambahkan projek Anda di sini!
+          </p>
+        </div>
 
-    <div class="projects-grid">
-
-      <!-- Projek kosong 1 -->
-      <div class="proj-card c-indigo empty reveal d1">
-        <div class="proj-head">
-          <div class="pj-icon" style="background:rgba(99,102,241,.12)">
-            <i class="fa-solid fa-folder-plus" style="color:#a5b4fc"></i>
+        <div class="projects-grid">
+          <!-- Projek kosong 1 -->
+          <div class="proj-card c-indigo empty reveal d1">
+            <div class="proj-head">
+              <div class="pj-icon" style="background: rgba(99, 102, 241, 0.12)">
+                <i class="fa-solid fa-folder-plus" style="color: #a5b4fc"></i>
+              </div>
+              <span class="pj-tag t-indigo">— Kategori —</span>
+            </div>
+            <div class="pj-title">Nama Projek 1</div>
+            <div class="pj-desc">
+              Tambahkan deskripsi projek Anda di sini. Jelaskan apa yang
+              dibangun, masalah yang diselesaikan, dan peran Anda dalam projek
+              ini.
+            </div>
+            <div class="pj-techs">
+              <span class="tech">Teknologi 1</span>
+              <span class="tech">Teknologi 2</span>
+              <span class="tech">Teknologi 3</span>
+            </div>
+            <div class="proj-empty-badge">
+              <i class="fa-solid fa-pen-to-square"></i> Isi projek ini
+            </div>
           </div>
-          <span class="pj-tag t-indigo">— Kategori —</span>
-        </div>
-        <div class="pj-title">Nama Projek 1</div>
-        <div class="pj-desc">Tambahkan deskripsi projek Anda di sini. Jelaskan apa yang dibangun, masalah yang diselesaikan, dan peran Anda dalam projek ini.</div>
-        <div class="pj-techs">
-          <span class="tech">Teknologi 1</span>
-          <span class="tech">Teknologi 2</span>
-          <span class="tech">Teknologi 3</span>
-        </div>
-        <div class="proj-empty-badge"><i class="fa-solid fa-pen-to-square"></i> Isi projek ini</div>
-      </div>
 
-      <!-- Projek kosong 2 -->
-      <div class="proj-card c-cyan empty reveal d2">
-        <div class="proj-head">
-          <div class="pj-icon" style="background:rgba(34,211,238,.12)">
-            <i class="fa-solid fa-folder-plus" style="color:#67e8f9"></i>
+          <!-- Projek kosong 2 -->
+          <div class="proj-card c-cyan empty reveal d2">
+            <div class="proj-head">
+              <div class="pj-icon" style="background: rgba(34, 211, 238, 0.12)">
+                <i class="fa-solid fa-folder-plus" style="color: #67e8f9"></i>
+              </div>
+              <span class="pj-tag t-cyan">— Kategori —</span>
+            </div>
+            <div class="pj-title">Nama Projek 2</div>
+            <div class="pj-desc">
+              Tambahkan deskripsi projek Anda di sini. Jelaskan apa yang
+              dibangun, masalah yang diselesaikan, dan peran Anda dalam projek
+              ini.
+            </div>
+            <div class="pj-techs">
+              <span class="tech">Teknologi 1</span>
+              <span class="tech">Teknologi 2</span>
+              <span class="tech">Teknologi 3</span>
+            </div>
+            <div class="proj-empty-badge">
+              <i class="fa-solid fa-pen-to-square"></i> Isi projek ini
+            </div>
           </div>
-          <span class="pj-tag t-cyan">— Kategori —</span>
-        </div>
-        <div class="pj-title">Nama Projek 2</div>
-        <div class="pj-desc">Tambahkan deskripsi projek Anda di sini. Jelaskan apa yang dibangun, masalah yang diselesaikan, dan peran Anda dalam projek ini.</div>
-        <div class="pj-techs">
-          <span class="tech">Teknologi 1</span>
-          <span class="tech">Teknologi 2</span>
-          <span class="tech">Teknologi 3</span>
-        </div>
-        <div class="proj-empty-badge"><i class="fa-solid fa-pen-to-square"></i> Isi projek ini</div>
-      </div>
 
-      <!-- Projek kosong 3 -->
-      <div class="proj-card c-amber empty reveal d3">
-        <div class="proj-head">
-          <div class="pj-icon" style="background:rgba(245,158,11,.12)">
-            <i class="fa-solid fa-folder-plus" style="color:#fcd34d"></i>
+          <!-- Projek kosong 3 -->
+          <div class="proj-card c-amber empty reveal d3">
+            <div class="proj-head">
+              <div class="pj-icon" style="background: rgba(245, 158, 11, 0.12)">
+                <i class="fa-solid fa-folder-plus" style="color: #fcd34d"></i>
+              </div>
+              <span class="pj-tag t-amber">— Kategori —</span>
+            </div>
+            <div class="pj-title">Nama Projek 3</div>
+            <div class="pj-desc">
+              Tambahkan deskripsi projek Anda di sini. Jelaskan apa yang
+              dibangun, masalah yang diselesaikan, dan peran Anda dalam projek
+              ini.
+            </div>
+            <div class="pj-techs">
+              <span class="tech">Teknologi 1</span>
+              <span class="tech">Teknologi 2</span>
+              <span class="tech">Teknologi 3</span>
+            </div>
+            <div class="proj-empty-badge">
+              <i class="fa-solid fa-pen-to-square"></i> Isi projek ini
+            </div>
           </div>
-          <span class="pj-tag t-amber">— Kategori —</span>
-        </div>
-        <div class="pj-title">Nama Projek 3</div>
-        <div class="pj-desc">Tambahkan deskripsi projek Anda di sini. Jelaskan apa yang dibangun, masalah yang diselesaikan, dan peran Anda dalam projek ini.</div>
-        <div class="pj-techs">
-          <span class="tech">Teknologi 1</span>
-          <span class="tech">Teknologi 2</span>
-          <span class="tech">Teknologi 3</span>
-        </div>
-        <div class="proj-empty-badge"><i class="fa-solid fa-pen-to-square"></i> Isi projek ini</div>
-      </div>
 
-      <!-- Projek kosong 4 -->
-      <div class="proj-card c-green empty reveal d4">
-        <div class="proj-head">
-          <div class="pj-icon" style="background:rgba(34,197,94,.12)">
-            <i class="fa-solid fa-folder-plus" style="color:#86efac"></i>
+          <!-- Projek kosong 4 -->
+          <div class="proj-card c-green empty reveal d4">
+            <div class="proj-head">
+              <div class="pj-icon" style="background: rgba(34, 197, 94, 0.12)">
+                <i class="fa-solid fa-folder-plus" style="color: #86efac"></i>
+              </div>
+              <span class="pj-tag t-green">— Kategori —</span>
+            </div>
+            <div class="pj-title">Nama Projek 4</div>
+            <div class="pj-desc">
+              Tambahkan deskripsi projek Anda di sini. Jelaskan apa yang
+              dibangun, masalah yang diselesaikan, dan peran Anda dalam projek
+              ini.
+            </div>
+            <div class="pj-techs">
+              <span class="tech">Teknologi 1</span>
+              <span class="tech">Teknologi 2</span>
+              <span class="tech">Teknologi 3</span>
+            </div>
+            <div class="proj-empty-badge">
+              <i class="fa-solid fa-pen-to-square"></i> Isi projek ini
+            </div>
           </div>
-          <span class="pj-tag t-green">— Kategori —</span>
-        </div>
-        <div class="pj-title">Nama Projek 4</div>
-        <div class="pj-desc">Tambahkan deskripsi projek Anda di sini. Jelaskan apa yang dibangun, masalah yang diselesaikan, dan peran Anda dalam projek ini.</div>
-        <div class="pj-techs">
-          <span class="tech">Teknologi 1</span>
-          <span class="tech">Teknologi 2</span>
-          <span class="tech">Teknologi 3</span>
-        </div>
-        <div class="proj-empty-badge"><i class="fa-solid fa-pen-to-square"></i> Isi projek ini</div>
-      </div>
 
-      <!-- Projek kosong 5 -->
-      <div class="proj-card c-pink empty reveal d5">
-        <div class="proj-head">
-          <div class="pj-icon" style="background:rgba(236,72,153,.12)">
-            <i class="fa-solid fa-folder-plus" style="color:#f9a8d4"></i>
+          <!-- Projek kosong 5 -->
+          <div class="proj-card c-pink empty reveal d5">
+            <div class="proj-head">
+              <div class="pj-icon" style="background: rgba(236, 72, 153, 0.12)">
+                <i class="fa-solid fa-folder-plus" style="color: #f9a8d4"></i>
+              </div>
+              <span class="pj-tag t-pink">— Kategori —</span>
+            </div>
+            <div class="pj-title">Nama Projek 5</div>
+            <div class="pj-desc">
+              Tambahkan deskripsi projek Anda di sini. Jelaskan apa yang
+              dibangun, masalah yang diselesaikan, dan peran Anda dalam projek
+              ini.
+            </div>
+            <div class="pj-techs">
+              <span class="tech">Teknologi 1</span>
+              <span class="tech">Teknologi 2</span>
+              <span class="tech">Teknologi 3</span>
+            </div>
+            <div class="proj-empty-badge">
+              <i class="fa-solid fa-pen-to-square"></i> Isi projek ini
+            </div>
           </div>
-          <span class="pj-tag t-pink">— Kategori —</span>
-        </div>
-        <div class="pj-title">Nama Projek 5</div>
-        <div class="pj-desc">Tambahkan deskripsi projek Anda di sini. Jelaskan apa yang dibangun, masalah yang diselesaikan, dan peran Anda dalam projek ini.</div>
-        <div class="pj-techs">
-          <span class="tech">Teknologi 1</span>
-          <span class="tech">Teknologi 2</span>
-          <span class="tech">Teknologi 3</span>
-        </div>
-        <div class="proj-empty-badge"><i class="fa-solid fa-pen-to-square"></i> Isi projek ini</div>
-      </div>
 
-      <!-- Projek kosong 6 -->
-      <div class="proj-card c-violet empty reveal d6">
-        <div class="proj-head">
-          <div class="pj-icon" style="background:rgba(124,58,237,.12)">
-            <i class="fa-solid fa-folder-plus" style="color:#c4b5fd"></i>
+          <!-- Projek kosong 6 -->
+          <div class="proj-card c-violet empty reveal d6">
+            <div class="proj-head">
+              <div class="pj-icon" style="background: rgba(124, 58, 237, 0.12)">
+                <i class="fa-solid fa-folder-plus" style="color: #c4b5fd"></i>
+              </div>
+              <span
+                class="pj-tag"
+                style="
+                  background: rgba(124, 58, 237, 0.1);
+                  color: #c4b5fd;
+                  border: 1px solid rgba(124, 58, 237, 0.28);
+                "
+                >— Kategori —</span
+              >
+            </div>
+            <div class="pj-title">Nama Projek 6</div>
+            <div class="pj-desc">
+              Tambahkan deskripsi projek Anda di sini. Jelaskan apa yang
+              dibangun, masalah yang diselesaikan, dan peran Anda dalam projek
+              ini.
+            </div>
+            <div class="pj-techs">
+              <span class="tech">Teknologi 1</span>
+              <span class="tech">Teknologi 2</span>
+              <span class="tech">Teknologi 3</span>
+            </div>
+            <div class="proj-empty-badge">
+              <i class="fa-solid fa-pen-to-square"></i> Isi projek ini
+            </div>
           </div>
-          <span class="pj-tag" style="background:rgba(124,58,237,.1);color:#c4b5fd;border:1px solid rgba(124,58,237,.28)">— Kategori —</span>
         </div>
-        <div class="pj-title">Nama Projek 6</div>
-        <div class="pj-desc">Tambahkan deskripsi projek Anda di sini. Jelaskan apa yang dibangun, masalah yang diselesaikan, dan peran Anda dalam projek ini.</div>
-        <div class="pj-techs">
-          <span class="tech">Teknologi 1</span>
-          <span class="tech">Teknologi 2</span>
-          <span class="tech">Teknologi 3</span>
-        </div>
-        <div class="proj-empty-badge"><i class="fa-solid fa-pen-to-square"></i> Isi projek ini</div>
       </div>
+    </section>
 
-    </div>
-  </div>
-</section>
+    <div class="divider"></div>
 
-<div class="divider"></div>
-
-<!-- ============================================================
+    <!-- ============================================================
      WHY ME
 ============================================================ -->
-<section id="whyme">
-  <div class="container">
-    <div class="reveal" style="text-align:center">
-      <div class="s-label" style="justify-content:center">Mengapa Saya?</div>
-      <h2 class="s-title">Nilai yang Saya <span class="g-text">Tawarkan</span></h2>
-      <p class="s-desc" style="margin:0 auto">Kombinasi unik antara kemampuan teknis, analitis, dan administratif yang menjadi nilai tambah bagi tim.</p>
-    </div>
+    <section id="whyme">
+      <div class="container">
+        <div class="reveal" style="text-align: center">
+          <div class="s-label" style="justify-content: center">
+            Mengapa Saya?
+          </div>
+          <h2 class="s-title">
+            Nilai yang Saya <span class="g-text">Tawarkan</span>
+          </h2>
+          <p class="s-desc" style="margin: 0 auto">
+            Kombinasi unik antara kemampuan teknis, analitis, dan administratif
+            yang menjadi nilai tambah bagi tim.
+          </p>
+        </div>
 
-    <div class="wm-grid">
-      <div class="wm-card reveal d1">
-        <div class="wm-ico"><i class="fa-solid fa-rocket" style="color:#a5b4fc"></i></div>
-        <div class="wm-title">Siap Berkontribusi</div>
-        <div class="wm-desc">Bukan hanya belajar, tapi siap memberikan kontribusi nyata sejak hari pertama dengan skill yang sudah terasah.</div>
-      </div>
-      <div class="wm-card reveal d2">
-        <div class="wm-ico"><i class="fa-solid fa-brain" style="color:#67e8f9"></i></div>
-        <div class="wm-title">Pemikiran Analitis</div>
-        <div class="wm-desc">Terlatih memecah masalah kompleks menjadi bagian kecil dan menyelesaikannya secara sistematis berbasis data.</div>
-      </div>
-      <div class="wm-card reveal d3">
-        <div class="wm-ico"><i class="fa-solid fa-seedling" style="color:#86efac"></i></div>
-        <div class="wm-title">Growth Mindset</div>
-        <div class="wm-desc">Selalu ingin berkembang, terbuka terhadap feedback, dan menjadikan setiap tantangan sebagai peluang belajar.</div>
-      </div>
-      <div class="wm-card reveal d4">
-        <div class="wm-ico"><i class="fa-regular fa-clock" style="color:#fcd34d"></i></div>
-        <div class="wm-title">Manajemen Waktu</div>
-        <div class="wm-desc">Terbiasa mengelola beberapa tugas sekaligus dengan deadline ketat selama masa perkuliahan aktif.</div>
-      </div>
-      <div class="wm-card reveal d5">
-        <div class="wm-ico"><i class="fa-solid fa-toolbox" style="color:#f9a8d4"></i></div>
-        <div class="wm-title">Serba Bisa</div>
-        <div class="wm-desc">Dapat mengerjakan tugas teknis (coding, data) maupun administratif (dokumen, laporan, presentasi) dengan baik.</div>
-      </div>
-      <div class="wm-card reveal d6">
-        <div class="wm-ico"><i class="fa-solid fa-bullseye" style="color:#c4b5fd"></i></div>
-        <div class="wm-title">Berorientasi Hasil</div>
-        <div class="wm-desc">Fokus pada output berkualitas. Setiap pekerjaan diselesaikan dengan standar terbaik dan tepat waktu.</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<div class="divider"></div>
-
-<!-- ============================================================
-     CONTACT
-============================================================ -->
-<section id="contact">
-  <div class="container">
-    <div class="reveal" style="text-align:center">
-      <div class="s-label" style="justify-content:center">Kontak</div>
-      <h2 class="s-title">Mari <span class="g-text">Terhubung!</span></h2>
-      <p class="s-desc" style="margin:0 auto 0">Tertarik bekerja sama? Saya siap berdiskusi. Jangan ragu untuk menghubungi saya kapan saja!</p>
-    </div>
-
-    <div class="contact-grid">
-
-      <!-- Info -->
-      <div class="contact-info reveal-l">
-        <p>Saya terbuka untuk kesempatan magang, kolaborasi projek, maupun diskusi santai seputar teknologi. Silakan pilih saluran komunikasi yang paling nyaman untuk Anda.</p>
-        <div class="contact-cards">
-          <a href="mailto:adjiewahyudi@email.com" class="cc" id="cc-email">
-            <div class="cc-ico" style="background:rgba(99,102,241,.12)">
-              <i class="fa-solid fa-envelope" style="color:#a5b4fc"></i>
+        <div class="wm-grid">
+          <div class="wm-card reveal d1">
+            <div class="wm-ico">
+              <i class="fa-solid fa-rocket" style="color: #a5b4fc"></i>
             </div>
-            <div>
-              <div class="cc-lbl">Email</div>
-              <div class="cc-val">adjiewahyudi@email.com</div>
+            <div class="wm-title">Siap Berkontribusi</div>
+            <div class="wm-desc">
+              Bukan hanya belajar, tapi siap memberikan kontribusi nyata sejak
+              hari pertama dengan skill yang sudah terasah.
             </div>
-          </a>
-          <a href="tel:+6285819945101" class="cc" id="cc-phone">
-            <div class="cc-ico" style="background:rgba(34,197,94,.12)">
-              <i class="fa-solid fa-phone" style="color:#86efac"></i>
+          </div>
+          <div class="wm-card reveal d2">
+            <div class="wm-ico">
+              <i class="fa-solid fa-brain" style="color: #67e8f9"></i>
             </div>
-            <div>
-              <div class="cc-lbl">Telepon / WhatsApp</div>
-              <div class="cc-val">+62 858-1994-5101</div>
+            <div class="wm-title">Pemikiran Analitis</div>
+            <div class="wm-desc">
+              Terlatih memecah masalah kompleks menjadi bagian kecil dan
+              menyelesaikannya secara sistematis berbasis data.
             </div>
-          </a>
-          <a href="https://linkedin.com/in/adjiewahyudi" class="cc" id="cc-linkedin" target="_blank" rel="noopener">
-            <div class="cc-ico" style="background:rgba(10,102,194,.12)">
-              <i class="fa-brands fa-linkedin" style="color:#60a5fa"></i>
+          </div>
+          <div class="wm-card reveal d3">
+            <div class="wm-ico">
+              <i class="fa-solid fa-seedling" style="color: #86efac"></i>
             </div>
-            <div>
-              <div class="cc-lbl">LinkedIn</div>
-              <div class="cc-val">linkedin.com/in/adjiewahyudi</div>
+            <div class="wm-title">Growth Mindset</div>
+            <div class="wm-desc">
+              Selalu ingin berkembang, terbuka terhadap feedback, dan menjadikan
+              setiap tantangan sebagai peluang belajar.
             </div>
-          </a>
-          <a href="https://github.com/adjiewahyudi" class="cc" id="cc-github" target="_blank" rel="noopener">
-            <div class="cc-ico" style="background:rgba(255,255,255,.06)">
-              <i class="fa-brands fa-github" style="color:#e2e8f0"></i>
+          </div>
+          <div class="wm-card reveal d4">
+            <div class="wm-ico">
+              <i class="fa-regular fa-clock" style="color: #fcd34d"></i>
             </div>
-            <div>
-              <div class="cc-lbl">GitHub</div>
-              <div class="cc-val">github.com/adjiewahyudi</div>
+            <div class="wm-title">Manajemen Waktu</div>
+            <div class="wm-desc">
+              Terbiasa mengelola beberapa tugas sekaligus dengan deadline ketat
+              selama masa perkuliahan aktif.
             </div>
-          </a>
+          </div>
+          <div class="wm-card reveal d5">
+            <div class="wm-ico">
+              <i class="fa-solid fa-toolbox" style="color: #f9a8d4"></i>
+            </div>
+            <div class="wm-title">Serba Bisa</div>
+            <div class="wm-desc">
+              Dapat mengerjakan tugas teknis (coding, data) maupun administratif
+              (dokumen, laporan, presentasi) dengan baik.
+            </div>
+          </div>
+          <div class="wm-card reveal d6">
+            <div class="wm-ico">
+              <i class="fa-solid fa-bullseye" style="color: #c4b5fd"></i>
+            </div>
+            <div class="wm-title">Berorientasi Hasil</div>
+            <div class="wm-desc">
+              Fokus pada output berkualitas. Setiap pekerjaan diselesaikan
+              dengan standar terbaik dan tepat waktu.
+            </div>
+          </div>
         </div>
       </div>
+    </section>
 
-      <!-- Form -->
-      <div class="contact-form reveal-r">
-        <div class="cf-title"><i class="fa-solid fa-paper-plane" style="color:#a5b4fc;margin-right:10px"></i>Kirim Pesan</div>
-        <form id="contact-form" novalidate>
-          <div class="fg-row">
-            <div class="fg">
-              <label for="cf-name">Nama Lengkap</label>
-              <input type="text" id="cf-name" placeholder="John Doe" required/>
+    <div class="divider"></div>
+
+    <!-- ============================================================
+     CONTACT
+============================================================ -->
+    <section id="contact">
+      <div class="container">
+        <div class="reveal" style="text-align: center">
+          <div class="s-label" style="justify-content: center">Kontak</div>
+          <h2 class="s-title">Mari <span class="g-text">Terhubung!</span></h2>
+          <p class="s-desc" style="margin: 0 auto 0">
+            Tertarik bekerja sama? Saya siap berdiskusi. Jangan ragu untuk
+            menghubungi saya kapan saja!
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Info -->
+          <div class="contact-info reveal-l">
+            <p>
+              Saya terbuka untuk kesempatan magang, kolaborasi projek, maupun
+              diskusi santai seputar teknologi. Silakan pilih saluran komunikasi
+              yang paling nyaman untuk Anda.
+            </p>
+            <div class="contact-cards">
+              <a href="mailto:adjiewahyudi@email.com" class="cc" id="cc-email">
+                <div
+                  class="cc-ico"
+                  style="background: rgba(99, 102, 241, 0.12)"
+                >
+                  <i class="fa-solid fa-envelope" style="color: #a5b4fc"></i>
+                </div>
+                <div>
+                  <div class="cc-lbl">Email</div>
+                  <div class="cc-val">adjiewahyudi@email.com</div>
+                </div>
+              </a>
+              <a href="tel:+6285819945101" class="cc" id="cc-phone">
+                <div class="cc-ico" style="background: rgba(34, 197, 94, 0.12)">
+                  <i class="fa-solid fa-phone" style="color: #86efac"></i>
+                </div>
+                <div>
+                  <div class="cc-lbl">Telepon / WhatsApp</div>
+                  <div class="cc-val">+62 858-1994-5101</div>
+                </div>
+              </a>
+              <a
+                href="https://linkedin.com/in/adjiewahyudi"
+                class="cc"
+                id="cc-linkedin"
+                target="_blank"
+                rel="noopener"
+              >
+                <div
+                  class="cc-ico"
+                  style="background: rgba(10, 102, 194, 0.12)"
+                >
+                  <i class="fa-brands fa-linkedin" style="color: #60a5fa"></i>
+                </div>
+                <div>
+                  <div class="cc-lbl">LinkedIn</div>
+                  <div class="cc-val">linkedin.com/in/adjiewahyudi</div>
+                </div>
+              </a>
+              <a
+                href="https://github.com/adjiewahyudi"
+                class="cc"
+                id="cc-github"
+                target="_blank"
+                rel="noopener"
+              >
+                <div
+                  class="cc-ico"
+                  style="background: rgba(255, 255, 255, 0.06)"
+                >
+                  <i class="fa-brands fa-github" style="color: #e2e8f0"></i>
+                </div>
+                <div>
+                  <div class="cc-lbl">GitHub</div>
+                  <div class="cc-val">github.com/adjiewahyudi</div>
+                </div>
+              </a>
             </div>
-            <div class="fg">
-              <label for="cf-email">Email</label>
-              <input type="email" id="cf-email" placeholder="john@email.com" required/>
+          </div>
+
+          <!-- Form -->
+          <div class="contact-form reveal-r">
+            <div class="cf-title">
+              <i
+                class="fa-solid fa-paper-plane"
+                style="color: #a5b4fc; margin-right: 10px"
+              ></i
+              >Kirim Pesan
             </div>
+            <form id="contact-form" novalidate>
+              <div class="fg-row">
+                <div class="fg">
+                  <label for="cf-name">Nama Lengkap</label>
+                  <input
+                    type="text"
+                    id="cf-name"
+                    placeholder="John Doe"
+                    required
+                  />
+                </div>
+                <div class="fg">
+                  <label for="cf-email">Email</label>
+                  <input
+                    type="email"
+                    id="cf-email"
+                    placeholder="john@email.com"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="fg">
+                <label for="cf-subject">Subjek</label>
+                <input
+                  type="text"
+                  id="cf-subject"
+                  placeholder="Perihal pesan Anda"
+                />
+              </div>
+              <div class="fg">
+                <label for="cf-msg">Pesan</label>
+                <textarea
+                  id="cf-msg"
+                  rows="5"
+                  placeholder="Tuliskan pesan Anda di sini..."
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="btn-form" id="cf-submit">
+                <i class="fa-solid fa-paper-plane"></i> Kirim Pesan
+              </button>
+              <div class="toast" id="cf-toast">
+                <i class="fa-solid fa-check-circle"></i> Pesan berhasil dikirim!
+                Terima kasih.
+              </div>
+            </form>
           </div>
-          <div class="fg">
-            <label for="cf-subject">Subjek</label>
-            <input type="text" id="cf-subject" placeholder="Perihal pesan Anda"/>
-          </div>
-          <div class="fg">
-            <label for="cf-msg">Pesan</label>
-            <textarea id="cf-msg" rows="5" placeholder="Tuliskan pesan Anda di sini..." required></textarea>
-          </div>
-          <button type="submit" class="btn-form" id="cf-submit">
-            <i class="fa-solid fa-paper-plane"></i> Kirim Pesan
-          </button>
-          <div class="toast" id="cf-toast">
-            <i class="fa-solid fa-check-circle"></i> Pesan berhasil dikirim! Terima kasih.
-          </div>
-        </form>
+        </div>
       </div>
+    </section>
 
-    </div>
-  </div>
-</section>
-
-<!-- ============================================================
+    <!-- ============================================================
      FOOTER
 ============================================================ -->
-<footer>
-  <div class="container">
-    <div class="footer-inner">
-      <div class="footer-logo">AW.</div>
-      <div class="footer-txt">
-        &copy; 2025 <strong style="color:var(--text)">Adjie Wahyudi</strong> &bull; Mahasiswa S1 Sistem Informasi &bull; BSI &bull; IPK 3.56
+    <footer>
+      <div class="container">
+        <div class="footer-inner">
+          <div class="footer-logo">AW.</div>
+          <div class="footer-txt">
+            &copy; 2025
+            <strong style="color: var(--text)">Adjie Wahyudi</strong> &bull;
+            Mahasiswa S1 Sistem Informasi &bull; BSI &bull; IPK 3.56
+          </div>
+          <div class="footer-socials">
+            <a
+              href="mailto:adjiewahyudi@email.com"
+              class="fsoc"
+              title="Email"
+              id="footer-email"
+            >
+              <i class="fa-solid fa-envelope"></i>
+            </a>
+            <a
+              href="tel:+6285819945101"
+              class="fsoc"
+              title="WhatsApp"
+              id="footer-wa"
+            >
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+            <a
+              href="https://linkedin.com/in/adjiewahyudi"
+              class="fsoc"
+              title="LinkedIn"
+              id="footer-linkedin"
+              target="_blank"
+              rel="noopener"
+            >
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a
+              href="https://github.com/adjiewahyudi"
+              class="fsoc"
+              title="GitHub"
+              id="footer-github"
+              target="_blank"
+              rel="noopener"
+            >
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a
+              href="ADJIE WAHYUDI CV.pdf"
+              class="fsoc footer-cv-btn"
+              title="Download CV"
+              id="footer-cv"
+              download
+            >
+              <i class="fa-solid fa-file-arrow-down"></i>
+            </a>
+          </div>
+        </div>
       </div>
-      <div class="footer-socials">
-        <a href="mailto:adjiewahyudi@email.com" class="fsoc" title="Email" id="footer-email">
-          <i class="fa-solid fa-envelope"></i>
-        </a>
-        <a href="tel:+6285819945101" class="fsoc" title="WhatsApp" id="footer-wa">
-          <i class="fa-brands fa-whatsapp"></i>
-        </a>
-        <a href="https://linkedin.com/in/adjiewahyudi" class="fsoc" title="LinkedIn" id="footer-linkedin" target="_blank" rel="noopener">
-          <i class="fa-brands fa-linkedin-in"></i>
-        </a>
-        <a href="https://github.com/adjiewahyudi" class="fsoc" title="GitHub" id="footer-github" target="_blank" rel="noopener">
-          <i class="fa-brands fa-github"></i>
-        </a>
-      </div>
-    </div>
-  </div>
-</footer>
+    </footer>
 
-<script src="main.js"></script>
-</body>
+    <script src="main.js"></script>
+  </body>
 </html>
